@@ -4,8 +4,9 @@ import {
   Icon,
   Paper
 } from "@material-ui/core";
-import './blog.css'
-import TitleField from '../../components/TitleField'
+import './blog.css';
+import TitleField from '../../components/TitleField';
+import BodyField from '../../components/BodyField';
 
 class Blog extends React.Component {
   constructor(props: any) {
@@ -13,8 +14,6 @@ class Blog extends React.Component {
 }
 handleClear() {
   this.setState ({
-
-
   })
 }
 
@@ -31,7 +30,14 @@ render(){
             />
             <br />
           </div>
-          <div   className="btn">
+          <div>
+            <BodyField
+              label="Body"
+            />
+            <br />
+          </div>
+
+          <div className="btn">
             <Button
               variant="contained"
               color="primary"
